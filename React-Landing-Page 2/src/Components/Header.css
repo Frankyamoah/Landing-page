@@ -1,0 +1,169 @@
+/* Importing Google fonts - used google fonts 2.4 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.logo{
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.header.dark .nav-link,
+.header.dark .auth-link {
+  color: white;
+}
+
+/* Dark mode styling*/ 
+
+.toggle-theme-button {
+    /* Your styling here */
+    background-color: #1f1e1e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-theme-button:hover {
+    background-color: #4812a6;
+}
+.header.light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .header.dark {
+    background-color: #333;
+    color: #fff;
+  }
+/* Existing styles for light mode hover states */
+.nav-link:hover {
+    color: #00ffd0;
+}
+
+.header.dark .nav-link:hover {
+    color: #00ffd0; /* Same color as light mode */
+}
+
+
+.nav-link:active {
+    color: #b837c6;
+}
+
+
+.header.dark .nav-link:active {
+    color: #b837c6; /* Same color as light mode */
+}
+
+
+.login-button:hover {
+    background-color: #262174;
+    color: #fff;
+}
+
+/* New styles for dark mode hover states */
+.header.dark .login-button:hover {
+    background-color: #262174; /* Same color as light mode */
+    color: #fff; /* Same color as light mode */
+}
+  
+
+  
+/* Header Styles*/
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-around;
+    flex-grow: 1;
+    
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links, .auth-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    font-size: 18px;
+    margin: 10px
+}
+
+
+.auth-link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Oval shapped button */
+  
+    cursor: pointer;
+}
+.nav-link:hover {
+    color: #00ffd0;
+}
+
+
+/* Clicked States for nav-links */
+.nav-link:active {
+    color: #b837c6
+}
+
+.login-button {
+    background-color: #bfbcbc;  
+    color: #333
+}
+
+.login-button:hover {
+    background-color: #262174;
+    color: #fff
+}
+
+.create-account-button {
+    background-color: #000108;  
+}
+
+.create-account-button:hover {
+    background-color: #262174;
+    color: #f2f2f2;
+}
+
+.create-account-button {
+    color: #fff;
+}
